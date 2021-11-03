@@ -1,36 +1,39 @@
-console.log("Merhaba Kodlama.io")
+console.log("Merhaba Stannis Kralım!")
 
-//JS type safe değildir
-let dolarBugun = 9.30
+//var yerine let kullanılır.
+//var keywordü ile tanımlanan değişken her blokta manipüle edilebiliyor.
+//Bu istemediğimiz bir şeydir.
+//Farklı bloklardaki aynı isimli değişkenler birbirinden etkilenmemelidir.
+//Buna block scope denir.
+
 
 let dolarDun = 9.20
-dolarDun = "9.20"
-{
-    let dolarDun = 9.10
-}
+let dolarBugun = 9.30
 
-console.log(dolarDun)
+//JS typesafe değildir!
+// dolarBugun = "Jon" bu geçerlidir.
+
+console.log(dolarBugun)
+
+//dolarYarın undefined
+//console.log(dolarYarın)
 
 const euroDun = 11.2
-//euroDun = 11
-
+// euroDun = 11 euroDun const oldugu için read-only'dir.
+//const keywordü de block scope'a sahiptir.
 console.log(euroDun)
 
-//array
-//camelCasing
-//PascalCasing
-let konutKredileri = ["Konut kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi","Özel Konut Kredisi"]
 
+//Arrays
+//Arrayler içinde her tipte veri aynı anda saklanabilir. 
+let konutKredileri = ["Konut kredisi","Emlak konut kredisi","Kamu konut kredisi"]
+
+//Arraydeki elemanları yazdır.
+console.log(konutKredileri)
+
+//Arraydeki verileri html üreterek yazdırdık.
 console.log("<ul>")
-for(let i = 0;i<konutKredileri.length;i++){
-    console.log("<li>"+konutKredileri[i]+"</li>")
+for(let i = 0;i < konutKredileri.length;i++){
+    console.log("<li>" + konutKredileri[i] + "</li>")
 }
 console.log("</ul>")
-
-{/* <ul>
-    <li>Konut kredisi</li>
-    <li>Emlak Konut Kredisi</li>
-    <li>Kamu Konut Kredisi</li>
-</ul> */}
-
-console.log(konutKredileri)
