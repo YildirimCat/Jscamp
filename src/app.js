@@ -1,4 +1,4 @@
-console.log("Merhaba Stannis Kralım!")
+console.log("Proudwing")
 
 //var yerine let kullanılır.
 //var keywordü ile tanımlanan değişken her blokta manipüle edilebiliyor.
