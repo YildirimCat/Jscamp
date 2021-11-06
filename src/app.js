@@ -19,7 +19,7 @@ console.log(dolarBugun)
 //console.log(dolarYarın)
 
 const euroDun = 11.2
-// euroDun = 11 euroDun const oldugu için read-only'dir.
+//euroDun = 11 euroDun const oldugu için read-only'dir.
 //const keywordü de block scope'a sahiptir.
 console.log(euroDun)
 
@@ -38,3 +38,10 @@ for(let i = 0;i < konutKredileri.length;i++){
 }
 console.log("</ul>")
 
+let category = {id:1,name:"Jon"};
+console.log(category.id);
+console.log(category.name);
+
+let {id,name} = category;
+console.log(id);
+console.log(name);
